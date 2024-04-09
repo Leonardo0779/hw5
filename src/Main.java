@@ -40,16 +40,16 @@ public class Main {
         if (deliveryDistance <= 20) {
             System.out.printf("Потребуется дней %s",days);
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            days = days =1;
+            days = days +1;
             System.out.printf("Потребуется дней %s",days);
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            days = days +2;
+            days = days ++;
             System.out.printf("Потребуется дней %s",days);
         } else {
             System.out.printf("Доставки нет %s",days);
         }
         System.out.println("\ntask5");
-        int monthNumber = 12;
+        int monthNumber = 13;
         switch (monthNumber) {
             case 12:
                 System.out.println("Зима");
@@ -87,6 +87,8 @@ public class Main {
             case 11:
                 System.out.println("Осень");
                 break;
+            default:
+                System.out.println("Некорректный номер месяца");
         }
     }
 }
